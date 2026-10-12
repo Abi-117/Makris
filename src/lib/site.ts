@@ -7,11 +7,12 @@ import hairCourse from "@/assets/hair-course.jpg";
 import skinCourse from "@/assets/skin-course.jpg";
 import partyMakeup from "@/assets/party-makeup.jpg";
 import artistAsset from "@/assets/artist.png.asset.json";
+import  hdMakeup from "@/assets/makeup.png";
 import logoAsset from "@/assets/makris-logo.png.asset.json";
 
 export const images = {
   heroBride, glossyBride, makeupApplication, bridalHair, academyClass,
-  hairCourse, skinCourse, partyMakeup,
+  hairCourse, skinCourse, partyMakeup,hdMakeup,
   artist: artistAsset.url,
   logo: logoAsset.url,
 };

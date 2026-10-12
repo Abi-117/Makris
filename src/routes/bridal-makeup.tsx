@@ -21,7 +21,7 @@ export const Route = createFileRoute("/bridal-makeup")({
 const services = [
   { t: "Bridal Makeup", d: "Traditional and contemporary bridal looks designed around your features, saree and jewellery.", img: images.heroBride },
   { t: "HD Makeup", d: "Soft-focus, camera-ready finish that looks refined in photographs and in person.", img: images.makeupApplication },
-  { t: "Ultra HD Makeup", d: "A lightweight, seamless finish for close-up photography and long celebrations.", img: images.glossyBride },
+  { t: "Ultra HD Makeup", d: "A lightweight, seamless finish for close-up photography and long celebrations.", img: images.hdMakeup },
   { t: "Glossy Makeup", d: "Luminous, dewy skin with a fresh, radiant glow.", img: images.glossyBride },
   { t: "Party Makeup", d: "Elegant looks for receptions, engagements, functions and celebrations.", img: images.partyMakeup },
   { t: "Bridal Hair Styling", d: "Classic buns, braids and flower arrangements to complete your look.", img: images.bridalHair },
