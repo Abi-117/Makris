@@ -176,7 +176,6 @@ function Home() {
             <Reveal key={i} delay={i * 0.05}><img src={src} alt="Bridal and beauty portfolio sample" loading="lazy" className="w-full break-inside-avoid rounded-xl object-cover transition duration-500 hover:opacity-90" /></Reveal>
           ))}
         </div>
-        <p className="mt-4 text-xs text-muted-foreground">Sample imagery shown — genuine portfolio photographs coming soon.</p>
       </section>
 
       {/* Student experience */}
