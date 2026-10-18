@@ -45,7 +45,7 @@ function Gallery() {
         </Reveal>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-14">
+      {/* <section className="mx-auto max-w-7xl px-5 py-14">
         <div className="flex flex-wrap justify-center gap-2" role="tablist" aria-label="Gallery categories">
           {["All", ...galleryCategories].map((c) => (
             <button key={c} role="tab" aria-selected={filter === c} onClick={() => setFilter(c)}
@@ -68,7 +68,36 @@ function Gallery() {
             ))}
           </motion.div>
         )}
-      </section>
+      </section> */}
+      <section className="mx-auto max-w-7xl px-5 py-14">
+  {items.length === 0 ? (
+    <p className="mt-16 text-center text-muted-foreground">
+      Photos are coming soon.
+    </p>
+  ) : (
+    <motion.div
+      layout
+      className="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4"
+    >
+      {items.map((g, i) => (
+        <motion.button
+          layout
+          key={g.src + g.category}
+          onClick={() => setIdx(i)}
+          aria-label={`Open ${g.alt}`}
+          className="group relative block w-full overflow-hidden rounded-xl break-inside-avoid"
+        >
+          <img
+            src={g.src}
+            alt={g.alt}
+            loading="lazy"
+            className="w-full rounded-xl object-cover transition duration-700 group-hover:scale-105"
+          />
+        </motion.button>
+      ))}
+    </motion.div>
+  )}
+</section>
 
       <AnimatePresence>
         {idx !== null && items[idx] && (

@@ -172,7 +172,7 @@ function Home() {
           <Link to="/gallery" className="btn-outline">Explore Our Gallery <ArrowRight className="h-4 w-4" /></Link>
         </div>
         <div className="mt-12 columns-2 gap-4 md:columns-3 [&>*]:mb-4">
-          {[images.glossyBride, images.makeupApplication, images.partyMakeup, images.bridalHair, images.heroBride, images.skinCourse].map((src, i) => (
+          {[images.floralFestiveLook, images.redGlamSaree, images.royalBlueBride, images.redSatinElegance, images.goldenBridalGlow, images.blackRoyalBridal].map((src, i) => (
             <Reveal key={i} delay={i * 0.05}><img src={src} alt="Bridal and beauty portfolio sample" loading="lazy" className="w-full break-inside-avoid rounded-xl object-cover transition duration-500 hover:opacity-90" /></Reveal>
           ))}
         </div>
